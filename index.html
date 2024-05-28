@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.css" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/img.css">
     <title>GymClub</title>
 </head>
 <body>
@@ -27,48 +29,93 @@
         </div>
     </div>
 
-    <section class="slider">
-        <div class="slider-content">
-            <input type="radio" name="btn-radio" id="radio1">
-            <input type="radio" name="btn-radio" id="radio2">
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <div class="slider-box primeiro">
-                <a class="img-desktop" href="#"><img src="img/doctor.png">
-                <a class="img-mobile" href="#"><img src="img/dp.png">
-            </div>
-            <div class="slider-box primeiro">
-                <a class="img-desktop" href="#"><img src="img/hazee.png">
-                <a class="img-mobile" href="#"><img src="img/giga.png">
-            </div>
-        </div>
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner banner">
+      <div class="carousel-item active">
+        <a href="#"></a><img src="img/hazee.png" class="d-block" style="width:100%"></a>
+      </div>
+      <div class="carousel-item banner2">
+        <a href="#"></a><img src="img/doctor.png" class="d-block" style="width:100%"></a>
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
-        <div class="nav-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-        </div>
-
-        <div class="nav-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-        </div>
-
-    </section>
+  <div class="slider">
+    <div class="slider-track">
+      <div class="slide">
+        <img src="img/1.webp" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/2.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/3.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/4.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/5.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/6.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/7.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/8.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/9.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/10.png" alt="">
+      </div>
+    </div>
+  </div>
 
     <header>
-        <div class="header-inner-content">
-            <div class="header-bottom-side">
-                <div class="header-bottom-side-left">
-                    <h2>CONHEÇA OS SUPLEMENTOS QUE TRANSFORMARÃO SEUS RESULTADOS</h2>
-                    <p>Produtos de qualidade para você ir mais longe!
-                       Eleve a qualidade do seu treino com Whey Protein.
-                    </p>
-                    <button>Ver Agora &#8594;</button>
-                    <div class="header-bootom-side-right">
-                    <img style="width: 100%;" src="img/po.png">
-                    </div>
-                </div>
-            </div>
+      <div class="conteiner">
+        <div class="conteiner-fluid">
+          <img src="img/img1.png" alt="">
+          <h2 id="text">GANHO DE MASSA MUSCULAR</h2>
         </div>
+        <div class="conteiner-fluid">
+          <img src="img/img2.png" alt="">
+          <h2 id="text">PERDER PESO</h2>
+        </div>
+        <div class="conteiner-fluid">
+          <img src="img/img3.png" alt="">
+          <h2 id="text">GANHO DE FORÇA</h2>
+        </div>
+      </div>
     </header>
+
+    <main>
+      <div class="top-conteiner">
+        <p id="texto">OS 10 MAIS VENDIDOS</p>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<!-- Latest compiled JavaScript -->
+<script src="js/script.js"></script>
 </html>

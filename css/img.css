@@ -1,0 +1,61 @@
+
+/* Estilos para o header */
+header {
+    display: flex !important; /* Define o layout flexível */
+    justify-content: center !important; /* Centraliza o conteúdo horizontalmente */
+    align-items: center !important; /* Centraliza o conteúdo verticalmente */
+    height: 90vh !important; /* Define a altura como 100% da viewport */
+    background-color: #ffffff !important; /* Cor de fundo para o header */
+}
+
+/* Estilos para o contêiner principal */
+.conteiner {
+    display: flex !important; /* Define o layout flexível */
+    justify-content: center !important; /* Centraliza os itens no eixo principal */
+    align-items: center !important; /* Centraliza os itens no eixo transversal */
+}
+
+/* Estilos para os contêineres individuais */
+.conteiner-fluid {
+    flex: 1 !important; /* Permite que cada contêiner cresça e ocupe o mesmo espaço */
+    padding: 10px !important; /* Adiciona espaçamento interno */
+    max-width: 33.33% !important; /* Limita a largura máxima para garantir que as imagens fiquem lado a lado */
+    display: flex !important; /* Define o layout flexível para alinhar a imagem */
+    justify-content: center !important; /* Centraliza a imagem horizontalmente */
+    align-items: center !important; /* Centraliza a imagem verticalmente */
+    overflow: hidden !important; /* Esconde qualquer conteúdo que ultrapasse os limites do contêiner */
+    border-radius: 15px !important; /* Arredonda as bordas do contêiner */
+    position: relative !important; /* Define o posicionamento relativo para os elementos filhos */
+}
+
+/* Estilos para o contêiner de imagem */
+.conteiner-fluid {
+    position: relative !important; /* Define o posicionamento relativo para os elementos filhos */
+}
+
+/* Estilos para as imagens */
+.conteiner-fluid img {
+    max-width: 100% !important; /* Define a largura máxima da imagem */
+    height: auto !important; /* Ajusta a altura automaticamente para manter a proporção */
+    transition: transform 0.3s ease !important; /* Suaviza a transição do zoom */
+    border-radius: 5px !important;
+}
+
+/* Efeito de zoom ao passar o mouse sobre as imagens */
+.conteiner-fluid:hover img {
+    transform: scale(1.1) !important; /* Aplica o efeito de zoom */
+}
+
+/* Estilos para os títulos */
+.conteiner-fluid h2 {
+    position: absolute !important; /* Define o posicionamento absoluto */
+    cursor: pointer;
+    top: 80% !important; /* Posiciona o título no centro verticalmente */
+    left: 50% !important; /* Posiciona o título no centro horizontalmente */
+    transform: translate(-50%, -50%) !important; /* Centraliza o título */
+    color: white !important; /* Define a cor do texto */
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Define um fundo semi-transparente */
+    padding: 10px 20px !important; /* Adiciona espaçamento interno */
+    border-radius: 5px !important; /* Arredonda as bordas */
+    text-align: center !important; /* Centraliza o texto */
+}
