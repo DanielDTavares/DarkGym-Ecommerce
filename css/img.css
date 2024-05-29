@@ -59,3 +59,69 @@ header {
     border-radius: 5px !important; /* Arredonda as bordas */
     text-align: center !important; /* Centraliza o texto */
 }
+
+/*os 10 mais vendidos*/
+.fdp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+    margin: 0;
+    background-color: #ffffff;
+  }
+
+  .conteiner-3d {
+    display: inline-block;
+    margin: 8px;
+    position: relative;
+    transform: translate(0px, -220px);
+  }
+
+  .card {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+
+  }
+
+  .background {
+    display: block;
+    width: 487px;
+    height: 550px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .card-content {
+    position: absolute;
+    top: 30;
+    left: 30;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translate(-140px, +150px);
+  }
+
+  .title {
+    margin: 20 !important;
+    padding: 20;
+    font-size: 20px;
+    text-align: center;
+    transform: translate(+400px, 100pxs);
+  }
+
+  .card:hover .background {
+    transform: scale(1.1);
+  }
+
+  .card:hover .card-content {
+    opacity: 1;
+  }
