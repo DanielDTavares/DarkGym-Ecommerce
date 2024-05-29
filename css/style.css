@@ -60,6 +60,10 @@ body {
     color: rgb(193, 210, 225);
 }
 
+.procurar {
+    background-color: none !important;
+}
+
 /* Define o layout flexível para a lista de navegação, 
    removendo os marcadores e centralizando os itens */
 nav ul {

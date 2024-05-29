@@ -23,6 +23,12 @@
     width: 100% !important;
 }
 
+/* Remove background */
+.container {
+    background: none;
+  }
+  
+
 @keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
